@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from app.tokenize_word import tokenize
-from app.count_freq_word import count_freq
-from app.extract_hashtag_word import extract_hashtag
-from app.sentiment_text import sentiment
+from tokenize_word import tokenize
+from count_freq_word import count_freq
+from extract_hashtag_word import extract_hashtag
+from sentiment_text import sentiment
 from pydantic import BaseModel
 
 

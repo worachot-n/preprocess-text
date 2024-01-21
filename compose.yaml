@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  web:
+    container_name: fastapi-web-service
+    restart: always
+    build: ./fastapi_web_service/
+    ports:
+      - 8080:80
+    volumes:
+      - all-data:/app/data
+
+  python:
+    container_name: read-word
+    build: ./read_word/
+    volumes:
+      - all-data:/app/data
+
+volumes:
+  all-data:
