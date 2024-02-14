@@ -12,3 +12,4 @@ starlette==0.14.2
 typing_extensions==4.9.0
 urllib3==2.1.0
 uvicorn==0.15.0
+thai-nner==0.3
